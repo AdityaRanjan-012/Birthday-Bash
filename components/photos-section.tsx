@@ -35,16 +35,16 @@ export default function PhotosSection() {
   }
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 text-white px-4">
           Our Memories
         </h2>
 
         {/* Form Section */}
         {showForm ? (
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8 max-w-md mx-auto border border-pink-300/30">
-            <p className="text-center text-gray-700 mb-6">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 sm:p-8 max-w-md mx-auto border border-pink-300/30 mx-4">
+            <p className="text-center text-gray-700 mb-4 sm:mb-6 text-sm sm:text-base">
               Enter your email to access our photo gallery
             </p>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -68,27 +68,30 @@ export default function PhotosSection() {
           /* ✅ Show real photos here */
           <div>
             {/* Buttons to resize images */}
-            <div className="flex justify-center gap-4 mb-6">
+            <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-6 px-4">
               <button
                 onClick={() => setImgSize((prev) => prev + 50)}
-                className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+                className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm sm:text-base"
               >
                 Increase Size
               </button>
               <button
                 onClick={() => setImgSize((prev) => Math.max(prev - 50, 100))}
-                className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
+                className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors text-sm sm:text-base"
               >
                 Decrease Size
               </button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4">
               {photos.map((src, i) => (
                 <div
                   key={i}
-                  className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform bg-gradient-to-br from-pink-200 to-red-200"
-                  style={{ width: `${imgSize}px`, height: `${imgSize}px` }}
+                  className="rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform bg-gradient-to-br from-pink-200 to-red-200 mx-auto"
+                  style={{ 
+                    width: `${imgSize}px`, 
+                    height: `${imgSize}px` 
+                  }}
                 >
                   <Image
                     src={src}

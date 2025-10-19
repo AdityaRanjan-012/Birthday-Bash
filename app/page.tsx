@@ -30,9 +30,9 @@ export default function Home() {
       <FloatingHearts />
 
       {/* Landing Section */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center px-4">
-        <div className="text-center space-y-8 z-10">
-          <h1 className="text-5xl md:text-7xl font-bold text-white text-balance drop-shadow-lg">
+      <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="text-center space-y-6 sm:space-y-8 z-10 max-w-4xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white text-balance drop-shadow-lg leading-tight">
             Welcome!
             <br />
             <span className="text-pink-200 animate-pulse">My Dear!</span>
@@ -43,10 +43,10 @@ export default function Home() {
           </div>
 
           {showMessage && (
-            <div className="animate-in fade-in zoom-in duration-500">
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8 max-w-md mx-auto border-2 border-pink-300 animate-glow-pulse">
-                <p className="text-2xl font-semibold text-red-600 text-balance">Happy Birthday To You Fruity</p>
-                <p className="text-4xl mt-4 animate-bounce">❤️</p>
+            <div className="animate-in fade-in zoom-in duration-500 px-4">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-8 max-w-md mx-auto border-2 border-pink-300 animate-glow-pulse">
+                <p className="text-xl sm:text-2xl font-semibold text-red-600 text-balance">Happy Birthday To You Fruity</p>
+                <p className="text-3xl sm:text-4xl mt-4 animate-bounce">❤️</p>
               </div>
             </div>
           )}
@@ -57,15 +57,15 @@ export default function Home() {
       <LoveStory />
 
       {/* Interactive Components Section */}
-      <section className="py-20 px-4 space-y-20">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
         <QuotesSection />
         <PhotosSection />
         <ChatBot />
       </section>
 
       {/* Footer Message */}
-      <section className="py-10 px-4 text-center">
-        <h3 className="text-2xl md:text-3xl font-semibold text-white animate-pulse">
+      <section className="py-8 sm:py-10 px-4 sm:px-6 text-center">
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white animate-pulse px-4">
           Hope we will together forever 🥺
         </h3>
       </section>

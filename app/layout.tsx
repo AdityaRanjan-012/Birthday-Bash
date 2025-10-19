@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Birthday Bash',
   description: 'A beautiful birthday celebration website',
   generator: 'v0.app',
+  viewport: 'width=device-width, initial-scale=1',
 }
 
 export default function RootLayout({

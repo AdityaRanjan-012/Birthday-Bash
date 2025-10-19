@@ -11,7 +11,7 @@ export default function PhotosSection() {
   const [imgSize, setImgSize] = useState(300) // default image size in px
 
   // ✅ Authorized email list
-  const authorizedEmails = ["adityaranjan3003@gmail.com", "infoanisha666@gmail.com"]
+  const authorizedEmails = ["ranjanadi012@gmail.com"]
 
   // ✅ All 6 image paths (from your public/images folder)
   const photos = [

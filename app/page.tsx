@@ -33,9 +33,9 @@ export default function Home() {
       <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-6 sm:space-y-8 z-10 max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white text-balance drop-shadow-lg leading-tight">
-            Welcome!
+            Welcome! My Dear
             <br />
-            <span className="text-pink-200 animate-pulse">My Dear!</span>
+            <span className="text-pink-200 animate-pulse">Today is 20th Oct!</span>
           </h1>
 
           <div className="flex justify-center">
